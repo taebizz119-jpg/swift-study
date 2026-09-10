@@ -18,9 +18,10 @@ giveFood(giver: "태경이", receiver: "보리") // 태경이가 보리에게 �
 - \t -> tab
 - 코드를 짜기 전, 먼저 매끄러운 문장을 만들 것. 코드를 읽을 때도 매끄럽게 읽혀야 함.
 - 기본값이 있는 parameter는 뒤쪽에 두세요.
+- 대문자로 시작: type, Protocol
 
 ## 26/08/27 Today I Learned
-[링크](swift.org)
+[링크]([swift.org](https://www.swift.org/documentation/api-design-guidelines/))
 - [Fundamentals]
 - 명확하게 사용하기. 각 선언마다 문서 주석 작성하기. 요약은 문장조각으로, 마침표로 끝내기. 마크업 활용.
 - 문서의 기본 구조는 빈 줄로 단락을 나눔.
@@ -41,9 +42,14 @@ giveFood(giver: "태경이", receiver: "보리") // 태경이가 보리에게 �
 - 보리는 16살입니다.
 - 보리는 **겁이 매우 많습니다**
 - 보리는 목청이 큽니다.
+  
 ---
+
 - 보리는 사회성이 없습니다...
 */
 
 ##
+
+# 26/09/01 Today I Learned
+
 
