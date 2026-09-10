@@ -20,7 +20,7 @@ giveFood(giver: "태경이", receiver: "보리") // 태경이가 보리에게 �
 - 기본값이 있는 parameter는 뒤쪽에 두세요.
 - 대문자로 시작: type, Protocol
 
-## 26/08/27 Today I Learned
+## 26/08/29 Today I Learned
 [링크]([swift.org](https://www.swift.org/documentation/api-design-guidelines/))
 - [Fundamentals]
 - 명확하게 사용하기. 각 선언마다 문서 주석 작성하기. 요약은 문장조각으로, 마침표로 끝내기. 마크업 활용.
@@ -50,6 +50,6 @@ giveFood(giver: "태경이", receiver: "보리") // 태경이가 보리에게 �
 
 ##
 
-# 26/09/01 Today I Learned
+# 26/09/03 Today I Learned
 
 
