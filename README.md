@@ -66,10 +66,10 @@ giveFood(giver: "태경이", receiver: "보리") // 태경이가 보리에게 �
 - mutating (원본을 바꿈) -> 동사 명령형      nonmutating (원본은 그대로 두고, 새 값을 돌려줌) -> -ed/-ing
   명사가 기본일 때는 반대로, nonmutating이 명사 그대로이고 mutating에 form-을 붙임
   nonmutating x.union(z)  ->  x.formUnion(Z) mutating
-- Bool은 "~이다" 처럼 읽히게.
-  is~	~이다, ~한 상태다	isEmpty, isSparkle, isHidden
-  has~	~을 가지고 있다	hasChanges, hasPermission
-  can~	~할 수 있다	canWrite, canDelete
-  should~	~해야 한다	shouldUpdate
-  동사 3인칭	~한다	contains(), intersects()
+- Bool은 "-이다" 처럼 읽히게.
+  is -이다, -한 상태다	isEmpty, isSparkle, isHidden
+  has~	-을 가지고 있다	hasChanges, hasPermission
+  can~	-할 수 있다	canWrite, canDelete
+  should~	-해야 한다	shouldUpdate
+  동사 3인칭	-한다	contains(), intersects()
 
