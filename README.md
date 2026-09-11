@@ -73,3 +73,29 @@ giveFood(giver: "태경이", receiver: "보리") // 태경이가 보리에게 �
   should~	-해야 한다	shouldUpdate
   동사 3인칭	-한다	contains(), intersects()
 
+## 26/09/08 Today I Learned
+- 인자 레이블 (argument label):	호출할 때 밖에서 보이는 이름	// from, to
+- 매개변수 이름 (parameter name):	함수 안에서 쓰는 이름	 // source, target
+
+func move(from source: Int, to target: Int) {
+print(source, target)
+}
+
+move(from: 1, to: 5)
+
+- 하나만 쓰면 안팎으로 쓰임.
+func move(from: Int) {
+print(from)
+}
+
+- _(언더바)를 레이블 자리에 쓰면 레이블 없음이 됨.
+  func double(_number: Int) -> Int { number * 2}
+
+  double(5)
+  
+- 인자들이 서로 구분이 필요 없나? : (min, max 같은)	생략
+-	값을 보존하는 타입 변환인가? :	생략
+-	첫 인자가 전치사구 일부인가? :	레이블 붙임 (전치사부터)
+-	함수이름+첫인자가 자연스러운 문장인가? :	생략
+-	위에 다 해당 안 됨	: 레이블 붙임
+  
