@@ -51,13 +51,25 @@ giveFood(giver: "태경이", receiver: "보리") // 태경이가 보리에게 �
 ##
 
 # 26/09/03 Today I Learned
-- 팩토리 메서드는 make 로 시작하기  -> // x.makeIterator()
 
-- side effect에 따라 동사/명사를 구분하기.
+- Initializer(생성자): 타입 이름에 괄호를 붙여서 바로 만드는 것
+- Factory Method: 뭔가를 만들어서 돌려주는 메서드 // let iterator = array.makeIterator()
+  팩토리 메서드는 make 로 시작하기  -> // x.makeIterator()
+- 생성자는 "이 타입 자체를 직접 만든다"는 느낌
+  팩토리 메서드는 "기존 것을 바탕으로, 다른 종류의 물건을 만들어낸다"는 느낌
+- 일반적인 code method는 "함수 이름은 영어 문장처럼 읽히게 하라" 이지만, Initializer, Factory Method는 이 규칙에서 예외임. 필요한 정보를 깔끔하게 나열하기.
+  
+
+- side effect(값을 돌려주는 것 외에 추가로 뭔가를 변화시킨다)에 따라 동사/명사를 구분하기.
 - side effect가 없을 시 -> 명사처럼 사용.  x.distance(to: y) // 거리를 계산해서 "돌려줌"
 - side effect 있을 시 -> 동사 명령형처럼 사용.  x.sort() x // 자체를 정렬해버림   x.append(y) // x 자체가 바뀜
-- mutating (원본을 바꿈) -> 동사 명령형      nonmutating (새 값을 돌려줌) -> -ed/-ing
+- mutating (원본을 바꿈) -> 동사 명령형      nonmutating (원본은 그대로 두고, 새 값을 돌려줌) -> -ed/-ing
   명사가 기본일 때는 반대로, nonmutating이 명사 그대로이고 mutating에 form-을 붙임
   nonmutating x.union(z)  ->  x.formUnion(Z) mutating
-- Bool은 "~이다" 처럼 읽히게. 
+- Bool은 "~이다" 처럼 읽히게.
+  is~	~이다, ~한 상태다	isEmpty, isSparkle, isHidden
+  has~	~을 가지고 있다	hasChanges, hasPermission
+  can~	~할 수 있다	canWrite, canDelete
+  should~	~해야 한다	shouldUpdate
+  동사 3인칭	~한다	contains(), intersects()
 
