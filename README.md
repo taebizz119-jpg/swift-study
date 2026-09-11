@@ -51,5 +51,13 @@ giveFood(giver: "태경이", receiver: "보리") // 태경이가 보리에게 �
 ##
 
 # 26/09/03 Today I Learned
+- 팩토리 메서드는 make 로 시작하기  -> // x.makeIterator()
 
+- side effect에 따라 동사/명사를 구분하기.
+- side effect가 없을 시 -> 명사처럼 사용.  x.distance(to: y) // 거리를 계산해서 "돌려줌"
+- side effect 있을 시 -> 동사 명령형처럼 사용.  x.sort() x // 자체를 정렬해버림   x.append(y) // x 자체가 바뀜
+- mutating (원본을 바꿈) -> 동사 명령형      nonmutating (새 값을 돌려줌) -> -ed/-ing
+  명사가 기본일 때는 반대로, nonmutating이 명사 그대로이고 mutating에 form-을 붙임
+  nonmutating x.union(z)  ->  x.formUnion(Z) mutating
+- Bool은 "~이다" 처럼 읽히게. 
 
