@@ -1,13 +1,7 @@
 //Making Speaker
 
-
-
-
-
-var teriMacbook: Macbook = .air
 var teriSpeaker: Speaker = .jbl
 
-print(teriMacbook.battery) // 80%
 teriSpeaker.turnOn()
 teriSpeaker.turnOff()
 
@@ -33,10 +27,3 @@ print(teriJBL.isOn) // false
 teriJBL.turnOn()
 print(teriJBL.isOn) // true
 
-
-/** 
-**비교연산자**
-a == b 
-// a와 b가 같으면 true를 반환합니다. 
-a != b
-// a와 b가 같지 않으면 true를 반환합니다. 
