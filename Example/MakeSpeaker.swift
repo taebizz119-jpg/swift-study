@@ -1,61 +1,41 @@
 //Making Speaker
 
-/**
+
 #Property = type안에 들어있는 변수/상수.
 
-```swift
 struct Speaker {
     var isOn: Bool = false     // ← 이게 프로퍼티
     var brand: String = "JBL"  // ← 이것도 프로퍼티
     var volume: Int = 50       // ← 이것도 프로퍼티
 }
-```
 
 프로퍼티에는 
 1) 저장 프로퍼티; 실제 값을 직접 저장함
 2) 계산 프로퍼티; 실제 값을 저장하지 않고 호출할때마다 계산해서 알려줌. 
 이렇게 두 유형이 있음.
 
-*/
-
-/**
-init : "초기화(initialize)"의 줄임말. 인스턴스를 만들 때 딱 한 번 실행되는 특별한 함수.
-"이 물건이 처음 만들어질 때, 프로퍼티들에 어떤 값을 넣어줄지" 정하는 자리
-
-class에서는 init이 거의 항상 필요해요
-*/
-
-
-
-// 나만의 타입 만들기
-Apple의 공식 권장: "일단 struct로 시작하고, class가 꼭 필요한 이유가 생기면 그때 바꿔라."
-
-/**
-
-# 방법1) struct = 관련된 정보들을 하나로 묶는 설계도.
-
-```swift
-struct Speaker {
-    var isOn: Bool = false
-    
-    mutating func turnOn() {
-        isOn = true
-    }
-    mutating func turnOff() {
-        isOn = false
-    }
-}
-```
-
-Speaker() = 생성자 호출 = 인스턴스 만들기
-struct Speaker { } → 설계도
-Speaker() → 그 설계도로 진짜 물건(인스턴스) 하나를 찍어냄
 
 ---
 
+#init
+init : "초기화(initialize)"의 줄임말. 인스턴스를 만들 때 딱 한 번 실행되는 특별한 함수.
+"이 물건이 처음 만들어질 때, 프로퍼티들에 어떤 값을 넣어줄지" 정하는 자리
+
+class에서는 init이 대부분 필요함.
+*/
+
+---
+
+**나만의 타입 만들기 (struct vs class)**
+Apple의 공식 권장: "일단 struct로 시작하고, class가 꼭 필요한 이유가 생기면 그때 바꿔라."
+
+# 방법 1. struct = 관련된 정보들을 하나로 묶는 설계도
+struct Speaker { } → 설계도
+Speaker() → 생성자(initializer) 호출 = 인스턴스 만들기; 그 설계도로 진짜 물건(인스턴스) 하나를 찍어냄
+
 ## mutating이란?
 struct(값 타입) 안에서, **"이 함수는 자기 자신(self)의 프로퍼티를 실제로 바꿀 것이다"**라고 미리 알려주는 허락 표시.
-```swift
+
 struct Speaker {
     var isOn: Bool = false
     
