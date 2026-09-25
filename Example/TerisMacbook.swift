@@ -5,6 +5,7 @@ enum Macbook {
   case pro
   case max
   // case air, pro, max -> 이렇게도 표현 가능
+  
   var battery: String {
     switch self {
       case .air: return "80%"
@@ -27,17 +28,17 @@ enum Macbook {
   print(report) //화면에 "이건 \(self) 맥북이고, 배터리는 \(battery) 남았습니다." 출력.
   // -> 근데 굳이 이렇게 할필요가? 
   
-  /**
-
 func descfibe() {
   print("\(baterry)")
   ->이건 값을 돌려주지 않음. 
-\()는 뭐예요? — 문자열 안에 값을 끼워 넣는 기능
-
-이걸 문자열 보간(String Interpolation)이라고 불러요. "문자열 안에, 변수나 계산 결과를 끼워 넣는다"는 뜻이에요.
-계산도 할수있고, 함수 호출 결과도 넣을 수 있음. 
+  
+  /**
+## 문자열 보간(String Interpolation)
+  문자열 안에, 변수나 계산 결과를 끼워 넣음. 계산도 할수있고, 함수 호출 결과도 넣을 수 있음. 
+  "스코프(Scope; 이 변수를 어디까지 볼 수 있는가)"라는 개념 때문에 바깥에서 선언된 var를 안에서 볼 수 있지만, 반대는 안됨.
+  즉, 바깥에서는 {} 안쪽에서 선언된 변수를 호출할 수 없음. 안에서는 바깥의 변수 호출 가능.
   */
-}
+
 
 /**
 
