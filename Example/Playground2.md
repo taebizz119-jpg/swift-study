@@ -2,8 +2,8 @@
 ## 26.09.29
 
 > 유형(Type)
-struct, class, enum으로 만드는 틀의 설계도.
-Int, String, Bool, Double, Float 등...
+- struct, class, enum으로 만드는 틀의 설계도.
+- Int, String, Bool, Double, Float 등...
 
 ```swift
 struct Dog {
@@ -28,7 +28,7 @@ func bark() { ... } // 함수 선언
 ```
 
 > 메소드(Method)
-유형 안에 들어있는 함수. 그 유형의 인스턴트가 할 수 있는 행동.
+- 유형 안에 들어있는 함수. 그 유형의 인스턴트가 할 수 있는 행동.
 ```swift
 struct Dog {
   var name: String
@@ -48,6 +48,7 @@ bori -> Instance
 
 
 > 초기화(Initialization)
-
+- Instance를 만들 때, 모든 property에 처음 값을 채워 넣는 것.
+- 
 
 
